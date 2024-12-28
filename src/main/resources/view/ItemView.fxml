@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.mobilezone.controller.ItemController">
+    <children>
+        <VBox spacing="10.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <HBox prefHeight="200.0" prefWidth="523.0" spacing="15.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                      <VBox prefHeight="200.0" prefWidth="441.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                          <children>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="160.0" prefHeight="27.2">
+                                  <children>
+                                      <Label prefHeight="18.0" prefWidth="132.0" text="Item Id" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </Label>
+                                      <Label fx:id="lblItemId" layoutX="10.0" layoutY="15.0" maxWidth="1.7976931348623157E308" prefHeight="18.0" text="1" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </Label>
+                                  </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT">
+                                  <children>
+                                      <Label prefHeight="18.0" prefWidth="125.0" text="Name" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="txtName" promptText="iPhone " style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </TextField>
+                                  </children>
+                              </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="125.0" text="Category Id" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCategoryId" promptText="IC001 (Phone)" style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="126.0" text="Model" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtModel" promptText="iPhone 16 Pro Max" style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT">
+                           <children>
+                              <Label prefHeight="18.0" prefWidth="126.0" text="Brand" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtBrand" promptText="Apple" style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0">
+                                  <children>
+                                      <Label prefHeight="18.0" prefWidth="127.0" text="Quantity" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="txtQuantity" prefHeight="28.0" prefWidth="105.0" promptText="5" style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </TextField>
+                              <Label alignment="CENTER" prefHeight="18.0" prefWidth="101.0" text="Re Order Level" textFill="#1e3e62">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtReOrderLevel" prefHeight="28.0" prefWidth="101.0" promptText="2" style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="Calibri" size="14.0" />
+                                 </font>
+                              </TextField>
+                                  </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="48.0" prefHeight="11.0" prefWidth="560.0">
+                                  <children>
+                                      <Label prefHeight="18.0" prefWidth="126.0" text="Unit Price  (LKR)" textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </Label>
+                                      <TextField fx:id="txtPrice" promptText="434,900" style="-fx-border-width: 0.5; -fx-border-radius: 10; -fx-background-radius: 10;" HBox.hgrow="ALWAYS">
+                                          <font>
+                                              <Font name="Calibri" size="14.0" />
+                                          </font>
+                                      </TextField>
+                                  </children>
+                              </HBox>
+                          </children>
+                      </VBox>
+                  <VBox spacing="15.0">
+                     <children>
+                        <Button fx:id="btnSaveItem" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnSaveItemOnAction" prefHeight="27.0" prefWidth="121.0" style="-fx-background-color: #1e3e62; -fx-border-radius: 10; -fx-background-radius: 10;" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="CLOSED_HAND" />
+                           </cursor>
+                        </Button>
+                              <Button fx:id="btnUpdateItem" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnUpdateItemOnAction" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #1e3e62; -fx-border-radius: 10; -fx-background-radius: 10;" text="Update" textFill="WHITE">
+                                  <font>
+                                      <Font name="Calibri Bold" size="14.0" />
+                                  </font>
+                                  <cursor>
+                                      <Cursor fx:constant="CLOSED_HAND" />
+                                  </cursor>
+                              </Button>
+                              <Button fx:id="btnDeleteItem" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnDeleteItemOnAction" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #1e3e62; -fx-border-radius: 10; -fx-background-radius: 10;" text="Delete" textFill="WHITE">
+                                  <font>
+                                      <Font name="Calibri Bold" size="14.0" />
+                                  </font>
+                                  <cursor>
+                                      <Cursor fx:constant="CLOSED_HAND" />
+                                  </cursor>
+                              </Button>
+                              <Button fx:id="btnReset" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnResetOnAction" prefHeight="27.0" prefWidth="107.0" style="-fx-background-color: #1e3e62; -fx-border-radius: 10; -fx-background-radius: 10;" text="Reset" textFill="WHITE">
+                                  <font>
+                                      <Font name="Calibri Bold" size="14.0" />
+                                  </font>
+                                  <cursor>
+                                      <Cursor fx:constant="CLOSED_HAND" />
+                                  </cursor>
+                              </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="55.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="btnCheckLowStock" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#checkLowStockItemsOnAction" style="-fx-background-color: #A6AEBF; -fx-background-radius: 10; -fx-border-radius: 10;" text="Click this button to check low stock items..." textFill="#1e3e62" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+                <TableView fx:id="tblItem" onMouseClicked="#onClickTable" prefHeight="174.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="colItemId" prefWidth="63.19997787475586" text="Item Id" />
+                        <TableColumn fx:id="colCategoryId" prefWidth="72.79998779296875" text="Category Id" />
+                        <TableColumn fx:id="colName" prefWidth="83.20001220703125" text="Name" />
+                        <TableColumn fx:id="colBrand" prefWidth="84.80000305175781" text="Brand" />
+                  <TableColumn fx:id="colModel" prefWidth="89.5999755859375" text="Model" />
+                  <TableColumn fx:id="colQty" prefWidth="43.99993896484375" text="Qty" />
+                  <TableColumn fx:id="colReOrderLevel" prefWidth="39.20001220703125" text="ROL" />
+                  <TableColumn fx:id="colPrice" prefWidth="84.00006103515625" text="Price" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="5.0" />
+               </VBox.margin>
+                </TableView>
+            </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorpane1" prefHeight="809.0" prefWidth="1443.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.mobilezone.controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="SaleLineChartAnchorpane" layoutX="24.0" layoutY="15.0" prefHeight="384.0" prefWidth="662.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: #1e3e62;" AnchorPane.leftAnchor="20.0">
+         <children>
+            <LineChart fx:id="lineChart" layoutX="36.0" layoutY="18.0" onMouseClicked="#lineChartOnClicked" prefHeight="335.0" prefWidth="586.0" style="-fx-alternative-column-fill-visible: true; -fx-alternative-row-fill-visible: true; -fx-border-radius: 30; -fx-background-radius: 30; -fx-background-color: #fff;" title="Sales and purchases per month">
+              <xAxis>
+                <NumberAxis label="Months" side="BOTTOM" tickLabelFill="#1e3e62" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" label="Orders/ Purchases / Returns" side="LEFT" tickLabelFill="#1e3e62" />
+              </yAxis>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </LineChart>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="SalesPieChartAnchorpane" layoutX="24.0" layoutY="412.0" prefHeight="372.0" prefWidth="654.0" style="-fx-background-color: #1e3e62; -fx-background-radius: 30; -fx-border-radius: 30;" AnchorPane.leftAnchor="20.0">
+         <children>
+            <PieChart fx:id="salesByCategoryPieChart" layoutX="38.0" layoutY="16.0" onMouseClicked="#pieChartOnClicked" prefHeight="335.0" prefWidth="586.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: #fff;" title="Sales by category" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane fx:id="expensesStackedBarChartAnchorpane" layoutX="794.0" layoutY="15.0" prefHeight="384.0" prefWidth="635.0" style="-fx-background-color: #1e3e62; -fx-background-radius: 30; -fx-border-radius: 30;" AnchorPane.rightAnchor="20.0">
+         <children>
+            <StackedBarChart fx:id="stackedBarChart" layoutX="30.0" layoutY="21.0" onMouseClicked="#stackBarChartOnClicked" prefHeight="342.0" prefWidth="575.0" style="-fx-background-color: #fff; -fx-background-radius: 30; -fx-border-radius: 30;" title="Expenses per month">
+              <xAxis>
+                <CategoryAxis fx:id="stackXAxis" label="Months" prefWidth="449.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="stackYAxis" label="Expenses" side="LEFT" />
+              </yAxis>
+            </StackedBarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="employeeStackBarchartAnchorpane" layoutX="759.0" layoutY="412.0" prefHeight="370.0" prefWidth="635.0" style="-fx-background-color: #1e3e62; -fx-background-radius: 30; -fx-border-radius: 30;" AnchorPane.rightAnchor="20.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <StackedBarChart fx:id="employeeStackedBarChart" layoutX="28.0" layoutY="14.0" prefHeight="335.0" prefWidth="585.0" style="-fx-background-color: #fff; -fx-border-radius: 30; -fx-background-radius: 30;" title="Employee performance per month">
+              <xAxis>
+                <CategoryAxis fx:id="employeeStackXAxis" label="Months" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="employeeStackYAxis" label="Total Sales" side="LEFT" />
+              </yAxis>
+            </StackedBarChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

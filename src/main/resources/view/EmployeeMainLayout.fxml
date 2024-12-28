@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" minHeight="500.0" minWidth="800.0" prefHeight="546.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.mobilezone.controller.EmployeeMainLayoutController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutY="7.0" minHeight="200.0" minWidth="100.0" prefHeight="546.0" prefWidth="234.0" spacing="5.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="234.0" textAlignment="CENTER" textFill="#8e8e8e">
+                    <font>
+                        <Font size="5.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="52.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/MobileZone3.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="6.0" prefWidth="231.0" style="-fx-border-color: #131a44; -fx-border-width: 1px 0 0 0;" textAlignment="CENTER" textFill="#8e8e8e">
+                    <font>
+                        <Font size="5.0" />
+                    </font>
+                </Label>
+                <VBox fillWidth="false" prefHeight="482.0" prefWidth="234.0" spacing="10.0" style="-fx-background-color: white;">
+                    <children>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToHomePage" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: #fff;" text=" Home" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-home-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToDashboard" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" DashBoard" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-speedometer-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToItemPage" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" Items" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-open-box-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" lineSpacing="1.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToItemCategoryPage" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" Category" textAlignment="CENTER" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-diversity-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToOrderPage" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" Orders" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-order-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToOrderReturnPage" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" Order Returns" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-return-purchase-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToCustomerPage" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" Customers" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-customers-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button alignment="BOTTOM_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navigateToLogout" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: #fff;" text=" Log Out" textFill="#1e3e62">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <padding>
+                                <Insets left="15.0" />
+                            </padding>
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../Images/icons8-logout-50.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets left="15.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="6.0" prefWidth="231.0" textAlignment="CENTER" textFill="#8e8e8e">
+                    <font>
+                        <Font size="5.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <AnchorPane fx:id="content" layoutX="235.2" layoutY="14.0" prefHeight="500.0" prefWidth="567.0" style="-fx-background-color: #1e3e62;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>

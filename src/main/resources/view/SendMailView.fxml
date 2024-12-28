@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.mobilezone.controller.SendMailController">
+    <children>
+        <VBox alignment="CENTER_RIGHT" prefHeight="400.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <Pane prefHeight="71.0" prefWidth="520.0">
+               <children>
+                      <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="30.0" prefWidth="520.0" text="Send Mail" textAlignment="CENTER" textFill="#1e3e62" wrapText="true">
+                          <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                          </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                      </Label>
+               </children>
+            </Pane>
+                <TextField fx:id="txtSubject" prefHeight="25.0" prefWidth="485.0" promptText="Subject" style="-fx-border-width: 0.5; -fx-background-radius: 10;" VBox.vgrow="ALWAYS" />
+                <TextArea fx:id="txtBody" prefHeight="161.0" prefWidth="520.0" promptText="Body" style="-fx-border-color: #A6AEBF; -fx-border-width: 0.5;" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextArea>
+                <Button mnemonicParsing="false" onAction="#sendUsingGmailOnAction" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: #1e3e62; -fx-background-radius: 10; -fx-border-radius: 10;" text="Send Using Gmail" textFill="WHITE" VBox.vgrow="ALWAYS">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="449.0" layoutY="343.0" mnemonicParsing="false" onAction="#sendUsingSendgridOnAction" prefHeight="48.0" prefWidth="150.0" style="-fx-background-color: #1e3e62; -fx-background-radius: 10; -fx-border-radius: 10;" text="Send Using Sendgrid" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                    </font>
+               <VBox.margin>
+                  <Insets top="-5.0" />
+               </VBox.margin>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
